@@ -1,1 +1,1 @@
-homework for week 3
+homework for week 3.
