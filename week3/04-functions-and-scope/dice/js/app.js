@@ -5,13 +5,15 @@ Creating a page where every time the user hits the "Roll Dice" button, the scree
 1) Write down pseudocode for the following program.
 
 2) Follow the steps below to write your code.
+* The following should be contained inside a function, rollDice
 * generate a random number between 1 - 6 and store to a variable, random1
 * generate a random number between 1 - 6 and store to a variable, random2
-* combine 'dice-' and random1 to form the random class for the first die, firstDie
-* combine 'dice-' and random1 to form the random class for the second die, secondDie
+* combine 'dice-' and random1 to form the class for the first die element, and store to a variable firstDie (hint: recall string concatenation)
+* combine 'dice-' and random1 to form the class for the second die element, and store to a variable secondDie (hint: recall string concatenation)
+* apply firstDie and secondDie to their respective HTML elements using the .className attribute (hint: use document.getElementById)
 * get the first die by ID and update the class to firstDie (hint: document.getElementById)
-* get the first die by ID and update the class to secondDie (hint:document.getElementById)
+* get the first die by ID and update the class to secondDie (hint: document.getElementById)
 
-3) Check to see if the Dice Roll has been hit, if it has run the diceRoll function.
+3) Attach an onclick event handler to the the element 'roll-dice' - when this button is clicked, it should trigger the above rollDice function
 
 */
