@@ -43,7 +43,8 @@ var eddie = {name:"Eddie Vedder", age:49,};
 //
 // Turn the `grungeAlbums` JavaScript object into a JSON string, and store it in `grungeAlbumsJSON`.
 
-var grungeAlbums = {
+
+var grungeAlbums = "{
   "albums":[
     {
         "name": "Bleach",
@@ -76,7 +77,7 @@ var grungeAlbums = {
         "unitsSold": 4770000
     }
   ]
-};
+}"
 
 // [ Step 4 ]
 // Imagine that we only had JSON to work with, and wanted to convert it to a JS Object.
