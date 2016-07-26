@@ -12,20 +12,20 @@ You'll add the ability to complete tasks in your favorite things list. Your prog
 */
 
 function addToList($list, thing) {
-  var $thingLi = $('<li>').text(thing);
-  $list.append($thingLi);
-  addCompleteLinks($thingLi);
+  var $thingLi = $('<li>').html(thing);//create a li item with text..html() works as well
+  $list.append($thingLi); //append the item to the ul...is there another construct to add an li?
+  addCompleteLinks($thingLi); //call function to add the additional span
 }
 
 function addCompleteLinks($lis) {
-  var $completedLink = $('<span>').html(' complete task').addClass('complete-task');
-  $lis.append($completedLink);
+  var $completedLink = $('<span>').html(' complete task').addClass('complete-task');//create the span\text
+  $lis.append($completedLink);//append to span to li
 
   $('.complete-task').on('click', function(event) {
     // We don't need `event.preventDefault()` here
     // because there is no weird default action
     // when clicking on a `span` element.
-    $(this).parent().addClass('completed');
+    $(this).parent().addClass('completed');//add class to the parent li of a
   });
 }
 
@@ -33,8 +33,8 @@ var $thingList = $('#fav-list');
 var $button = $('#new-thing-button');
 var $newThingInput = $('#new-thing');
 
-var $thingListItems = $('#fav-list .fav-thing');
-addCompleteLinks($thingListItems);
+var $thingListItems = $('#fav-list .fav-thing');//grab all li's
+addCompleteLinks($thingListItems); //add span to existing lis'
 
 $button.on('click', function(event) {
   event.preventDefault();
