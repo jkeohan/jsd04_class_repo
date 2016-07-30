@@ -34,7 +34,7 @@ Open Weather Map Instructions:
 
 
 $(document).ready(function () {
-  var apiKey = 'YOUR_KEY_HERE';
+  var apiKey = '19ab861f15cfd2e8216a3be1ed615598';
   var weatherUrl = '';
 });
 

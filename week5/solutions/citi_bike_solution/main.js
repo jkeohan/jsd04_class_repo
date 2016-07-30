@@ -21,6 +21,7 @@ window.onload = function () {
 	function makeRequest () {
 		// define URL (endpoint)
 		var url = 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json';
+		//var url = 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json';
 		// Create instance of XMLHTTPRequest
 		var httpRequest = new XMLHttpRequest();
 
