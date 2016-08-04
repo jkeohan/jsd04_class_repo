@@ -39,6 +39,9 @@ $(document).ready(function () {
 
   // Problem 1
   $.get(weatherUrl + 'New York City')
+    .fail(function (xhr) {
+      console.log(xhr);
+    })
   	.done(function (response) {
   		console.log(response);
 
@@ -52,9 +55,9 @@ $(document).ready(function () {
 			.append('<p>Wind Speed: ' + windSpeed + '</p>')
 
   	})
-  	.fail(function (xhr) {
-  		console.log(xhr);
-  	});
+  	// .fail(function (xhr) {
+  	// 	console.log(xhr);
+  	// });
 
   	// Problem 2
   	$('#weather-form').submit(function (event) {

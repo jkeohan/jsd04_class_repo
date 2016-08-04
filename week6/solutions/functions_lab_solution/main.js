@@ -42,12 +42,14 @@ function makeCountingFunction (predicate) {
 }
 
 function isOdd (number) {
-	if (number % 2 === 0) {
+	if (number % 2 === 1) {
 		return false;
 	} else {
 		return true;
 	}
 }
+
+//function isOdd (number) { return number %2 == 1}
 
 function isEven (number) {
 	if (number % 2 === 0) {
