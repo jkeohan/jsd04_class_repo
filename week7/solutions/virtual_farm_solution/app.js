@@ -47,7 +47,7 @@ $(document).ready(function () {
     this.name = name;
     this.image = image;
     this.sound = sound;
-      this.talk = function () {
+    this.talk = function () {
         alert(this.name + ' says: ' + this.sound + '!')
       }
   }
