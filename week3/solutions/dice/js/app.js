@@ -18,9 +18,8 @@ Creating a page where every time the user hits the "Roll Dice" button, the scree
 
 */
 
-document.getElementById('roll-dice').onclick = diceRoll;
-function diceRoll() {
-  console.log("yes")
+document.getElementById('roll-dice').onclick = roleDice;
+function roleDice() {
   var random1 = Math.floor((Math.random() * 6) + 1);
   var random2 = Math.floor((Math.random() * 6) + 1);
 

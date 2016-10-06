@@ -65,3 +65,18 @@
 
 
 // Your code here
+
+/** - BONUS 1
+ * Question 7 
+ * Using the array of ["a","b","c","a","b"], create a new array which contains 
+ * only unique values from the array provided. Store the new array in q7.
+ * HINT: possible solutions involve: for loop, .forEach(), .filter(), .indexOf(), 
+ */
+
+ /** - BONUS 2
+ * Question 8 
+ * Loop through the array of ["green","blue","yellow"], and return only the 
+ * color "blue". Store the new array in q8.
+ */
+
+
